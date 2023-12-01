@@ -1,0 +1,1526 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lucid="clr-namespace:Lucid"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Lucid.MainWindow"
+        Title="Lucid"
+        MinWidth="800"
+        MinHeight="450">
+
+
+    <ScrollViewer>
+        <Grid
+            ShowGridLines="True"
+            HorizontalAlignment="Center"
+            RowDefinitions="650, 500, 650, 500, 580, 200, 650, 650, 350, 200"
+            ColumnDefinitions="*,*,3*,3*,*,*">
+			<!--Carefully crafted and beautiful landing page--> 
+			<StackPanel
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="6"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+
+                <StackPanel.Background>
+                    <ImageBrush Source="Assets/banner.jpg" Stretch="UniformToFill"></ImageBrush>
+                </StackPanel.Background>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="0"
+                        Grid.Column="2">
+
+                <TextBlock
+                    Margin="0, 20, 0, 0"
+                    Text="Lucid"
+                    Foreground="Azure"
+                    TextAlignment="Left">
+
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 100, 0, 0"
+                    TextAlignment="Left"
+                    Foreground="DodgerBlue"
+                    FontStyle="Italic"
+                    FontSize="17"
+                    Text="Introducing Lucid Theme">
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 20, 0, 0"
+                    TextAlignment="Left"
+                    TextWrapping="Wrap"
+                    Foreground="Azure"
+                    FontFamily="MerriweatherSans-Bold.ttfe"
+                    FontSize="39"
+                    Text="Carefully crafted and beautiful landing page.">
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 30, 0, 0"
+                    TextAlignment="Left"
+                    TextWrapping="Wrap"
+                    Foreground="Azure"
+                    FontSize="18"
+                    Text="Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.">
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 80, 0, 70"
+                    Orientation="Horizontal">
+                    <Button
+                        Width="150"
+                        Height="50"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        FontSize="17"
+                        Foreground="White"
+                        Content="Download Now"
+                        Background="DodgerBlue">
+                    </Button>
+                    <Border
+
+                        Margin="10, 0, 0, 0"
+                        BorderBrush="White"
+                        BorderThickness="0.6"
+                        CornerRadius="10">
+                        <Button
+
+                            Width="150"
+                            Height="50"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            FontSize="17"
+                            Foreground="White">
+                            View Features
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel
+                Grid.Row="0"
+                Grid.Column="3"
+                Orientation="Vertical">
+                <StackPanel
+                    Margin="0, 15, 0, 0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top" Grid.Row="0" Grid.Column="1">
+                    <StackPanel
+
+                        Orientation="Vertical">
+                        <Button Foreground="Azure">Home</Button>
+                        <Border
+                            Width="50"
+                            Height="5"
+                            Background="DodgerBlue">
+                        </Border>
+                    </StackPanel>
+                    <Button Foreground="Azure">Features</Button>
+                    <Button Foreground="Azure">About</Button>
+                    <Button Foreground="Azure">Testimonials</Button>
+                    <Button Foreground="Azure">Pricing</Button>
+                    <Button Foreground="Azure">Contact</Button>
+                </StackPanel>
+                <Image
+                    Margin="0, 70, 0, 0"
+                    Height="540"
+                    Width="460"
+                    Source="Assets/verticle-phone.png"
+                    Stretch="Fill">
+                </Image>
+            </StackPanel>
+			<!--List of amazing features-->
+            <StackPanel
+                Grid.Column="0"
+                Grid.Row="1"
+                Background="White">
+            </StackPanel>
+			
+            <StackPanel
+                Background="White"
+                Grid.Column="5"
+                Grid.Row="1">
+            </StackPanel>
+            <StackPanel
+                HorizontalAlignment="Center"
+                Background="White"
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2">
+                <TextBlock
+                    Margin="0, 50, 0, 0"
+                    TextAlignment="Center"
+                    FontSize="15"
+                    Foreground="DodgerBlue">
+                    Product Overview
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 10, 0, 0"
+                    TextAlignment="Center"
+                    FontSize="32"
+                    FontStyle="Normal"
+                    Foreground="Black">
+                    List of amazing features
+                </TextBlock>
+
+            </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0, 130, 2, 0"
+                Orientation="Horizontal">
+                <Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+                </Border>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="3"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="2, 130, 0, 0"
+                Orientation="Horizontal">
+                <Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+                </Border>
+            </StackPanel>
+            <StackPanel
+                Margin="0, 160, 0, 60"
+                HorizontalAlignment="Left"
+                Grid.Row="1"
+                Grid.Column="2"
+                Width="250"
+                Orientation="Vertical">
+                <Button
+                    HorizontalAlignment="Center"
+                    Width="100"
+                    Height="100"
+                    Background="DodgerBlue"
+                    CornerRadius="100">
+                </Button>
+                <TextBlock
+                    Margin="0, 15, 0, 15"
+                    FontSize="22"
+                    TextAlignment="Center"
+                    Text="Responsive">
+                </TextBlock>
+                <TextBlock
+                    Foreground="Gray"
+                    Width="220"
+                    TextAlignment="Center"
+                    FontSize="16"
+                    TextWrapping="Wrap"
+                    Text="Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel
+                Margin="220, 160, 0, 60"
+                Grid.Row="1"
+                Grid.Column="2"
+                Width="250"
+                Orientation="Vertical">
+                <Button
+                    Width="100"
+                    Height="100"
+                    Background="DodgerBlue"
+                    HorizontalAlignment="Center"
+                    CornerRadius="100">
+                </Button>
+                <TextBlock
+                    FontSize="22"
+                    Margin="0, 15, 0, 15"
+                    TextAlignment="Center">
+                    Customizable
+                </TextBlock>
+                <TextBlock
+                    Foreground="Gray"
+                    Width="220"
+                    TextAlignment="Center"
+                    FontSize="16"
+                    TextWrapping="Wrap">
+                    Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                </TextBlock>
+
+            </StackPanel>
+            <StackPanel
+                Margin="0, 160, 220, 60"
+                Grid.Column="3"
+                Grid.Row="1"
+                Width="250"
+                Orientation="Vertical">
+                <Button
+                    HorizontalAlignment="Center"
+                    Width="100"
+                    Height="100"
+                    Background="DodgerBlue"
+                    CornerRadius="100">
+                </Button>
+                <TextBlock
+                    FontSize="22"
+                    Margin="0, 15, 0, 15"
+                    TextAlignment="Center"
+                    Text="Lovely design">
+                </TextBlock>
+                <TextBlock
+                    Foreground="Gray"
+                    Width="220"
+                    TextAlignment="Center"
+                    FontSize="16"
+                    TextWrapping="Wrap"
+                    Text="Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel
+                Margin="0, 160, 0, 60"
+                HorizontalAlignment="Right"
+                Grid.Row="1"
+                Grid.Column="3"
+                Width="250"
+                Orientation="Vertical">
+                <Button
+                    Width="100"
+                    Height="100"
+                    Background="DodgerBlue"
+                    HorizontalAlignment="Center"
+                    CornerRadius="100">
+                </Button>
+                <TextBlock
+                    FontSize="22"
+                    Margin="0, 15, 0, 15"
+                    TextAlignment="Center">
+                    Mobile Friendly
+                </TextBlock>
+                <TextBlock
+                    Foreground="Gray"
+                    Width="220"
+                    TextAlignment="Center"
+                    FontSize="16"
+                    TextWrapping="Wrap">
+                    Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                </TextBlock>
+            </StackPanel>
+			<!--Beautiful on every device-->
+            <DockPanel
+                Background="Gray"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Grid.Row="2"
+                Height="1"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                Margin="0, 0, 0, 0">
+                <Border
+                    VerticalAlignment="Top"
+                    Background="Gray">
+                </Border>
+            </DockPanel>
+            <Image
+                VerticalAlignment="Bottom"
+                Margin="0, 20, 60, 0"
+                Grid.Column="2"
+                Grid.Row="2"
+                Width="430"
+                Height="500"
+                Stretch="Fill"
+                Source="Assets/verticle-phone.png">
+            </Image>
+            <StackPanel
+                Margin="15, 0, 0, 0"
+                Grid.Column="3"
+                Grid.Row="2">
+                <TextBlock
+                    FontStyle="Normal"
+                    Margin="0, 90, 0, 0"
+                    Foreground="DodgerBlue"
+                    TextAlignment="Left"
+                    FontSize="13">
+                    DIP INTO THE DETAILS
+                </TextBlock>
+                <TextBlock
+                    FontStyle="Normal"
+                    FontSize="30"
+                    Margin="0, 15, 0, 0"
+                    TextAlignment="Left">
+                    Beautiful on every device
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 20, 0, 0"
+                    Orientation="Horizontal">
+                    <Border
+                        Margin="0, 0, 3, 0"
+                        HorizontalAlignment="Right"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                    <Border
+                        HorizontalAlignment="Right"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                </StackPanel>
+                <TextBlock
+                    FontSize="15"
+                    Foreground="Gray"
+                    Margin="0, 20,0, 0"
+                    TextAlignment="Left"
+                    TextWrapping="Wrap">
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 25, 0, 5"
+                    Orientation="Horizontal">
+                    <Image
+                        Margin="0, 0, 10, 0"
+                        Source="Assets/1111.png" Width="30" Height="30">
+                    </Image>
+                    <TextBlock
+                        FontSize="18"
+                        Margin="0, 5, 0, 0"
+                        TextAlignment="Left">
+                        Awesome design
+                    </TextBlock>
+
+                </StackPanel>
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Image
+                        Margin="0, 0, 10, 0"
+                        Source="Assets/222.png" Width="30" Height="30">
+                    </Image>
+                    <TextBlock
+                        Foreground="Black"
+                        FontSize="18"
+                        Margin="0, 5, 0, 5"
+                        TextAlignment="Left">
+                        Fully responsive
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Image
+                        Margin="0, 0, 10, 0"
+                        Source="Assets/333.png" Width="30" Height="30">
+                    </Image>
+                    <TextBlock
+                        Foreground="Black"
+                        FontSize="18"
+                        Margin="0, 5, 0, 5"
+                        TextAlignment="Left">
+                        Retina ready
+                    </TextBlock>
+                </StackPanel>
+
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Image
+                        Margin="0, 0, 10, 0"
+                        Source="Assets/4.jpg" Width="30" Height="30">
+                    </Image>
+                    <TextBlock
+                        Foreground="Black"
+                        FontSize="18"
+                        Margin="0, 5, 0, 10"
+                        TextAlignment="Left">
+                        Tons of features and easy to use
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+			<!--Super easy to customize-->
+            <StackPanel
+                Background="Gainsboro"
+                Grid.Row="3"
+                Grid.Column="2">
+                <TextBlock
+                    FontStyle="Normal"
+                    Margin="0, 100, 0, 0"
+                    Foreground="DodgerBlue"
+                    TextAlignment="Left"
+                    FontSize="13">
+                    DIP INTO THE DETAILS
+                </TextBlock>
+                <TextBlock
+                    FontStyle="Normal"
+                    Margin="0, 10, 90, 0"
+                    FontSize="28">
+                    Super easy to customize
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 20, 0, 20"
+                    Orientation="Horizontal">
+                    <Border
+                        Margin="0, 0, 3, 0"
+                        HorizontalAlignment="Left"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                    <Border
+                        HorizontalAlignment="Left"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                </StackPanel>
+                <TextBlock
+                    Margin="0, 0, 30, 50"
+                    FontSize="18"
+                    Width="440"
+                    Foreground="Gray"
+                    HorizontalAlignment="Left"
+                    TextWrapping="Wrap">
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                    tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </TextBlock>
+            </StackPanel>
+            <StackPanel
+                Background="Gainsboro"
+                Grid.Row="3"
+                Grid.Column="1">
+            </StackPanel>
+            <StackPanel
+                Background="Gainsboro"
+                Grid.Row="3"
+                Grid.Column="4">
+            </StackPanel>
+
+            <StackPanel
+                Background="Gainsboro"
+                Grid.Column="3"
+                Grid.Row="3">
+                <Image
+                    Margin="0, 40, 0, 0"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Width="520"
+                    Height="650"
+                    Source="Assets/laid-phone2.png">
+
+                </Image>
+            </StackPanel>
+			<!--Pricings and Plans-->
+            <StackPanel
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Grid.Row="4">
+                <Image
+                    HorizontalAlignment="Stretch"
+                    Source="Assets/paralax.jpg">
+                </Image>
+            </StackPanel>
+            <StackPanel
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Grid.Row="4"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <StackPanel.Background>
+                    <ImageBrush Source="Assets/paralax.jpg" Stretch="UniformToFill"></ImageBrush>
+                </StackPanel.Background>
+            </StackPanel>
+            <StackPanel
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                HorizontalAlignment="Center">
+                <TextBlock
+                    Margin="0, 50, 0, 0"
+                    TextAlignment="Center"
+                    Foreground="DodgerBlue"
+                    Text="QUALITY HAS ITS PRICE">
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 10, 0, 0"
+                    TextAlignment="Center"
+                    Text="Pricings &amp; Plans"
+                    Foreground="White"
+                    FontSize="33">
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 20, 0, 0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+                    <Border
+                        Margin="0, 0, 3, 0"
+                        HorizontalAlignment="Right"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                    <Border
+                        HorizontalAlignment="Right"
+                        Width="20"
+                        Height="2"
+                        Background="DodgerBlue">
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel
+                Margin="0, 200, 0, 0"
+                Grid.Column="2"
+                Grid.Row="4"
+                Orientation="Vertical"
+                HorizontalAlignment="Left">
+                <TextBlock
+                    Width="500"
+                    FontSize="20"
+                    Foreground="White"
+                    FontStyle="Oblique"
+                    TextWrapping="Wrap">
+                    Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea.
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 20, 0, 0"
+                    Orientation="Horizontal">
+                    <Border
+                        Width="80"
+                        Height="80"
+                        CornerRadius="100"
+                        ClipToBounds="True">
+                        <Image
+                            Width="80"
+                            Height="80"
+                            UseLayoutRounding="True" Source="Assets/PERSON1.jpg" />
+                    </Border>
+                    <StackPanel
+                        Margin="15, 15, 0, 0"
+                        Orientation="Vertical">
+                        <TextBlock
+                            Foreground="White"
+                            Text="John Doe">
+                        </TextBlock>
+                        <TextBlock
+                            Margin="0, 10, 0, 0"
+                            Foreground="White"
+                            Text="CEO, THE RIVERS COMPANY">
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel
+                Margin="0, 200, 0, 0"
+                Grid.Column="3"
+                Grid.Row="4"
+                Orientation="Vertical"
+                HorizontalAlignment="Right">
+                <TextBlock
+                    Width="500"
+                    FontSize="20"
+                    Foreground="White"
+                    FontStyle="Oblique"
+                    TextWrapping="Wrap">
+                    A shoe is not only a design, but it's a part of your body 
+					language, the way you walk. The way you're going to move 
+					is quite dictated by your shoes.
+                </TextBlock>
+                <StackPanel
+                    Margin="0, 20, 0, 0"
+                    Orientation="Horizontal">
+                    <Border
+                        Width="80"
+                        Height="80"
+                        CornerRadius="100"
+                        ClipToBounds="True">
+                        <Image
+                            Width="80"
+                            Height="80"
+                            UseLayoutRounding="True" 
+							Source="Assets/second.jpg" />
+                    </Border>
+                    <StackPanel
+                        Margin="15, 15, 0, 0"
+                        Orientation="Vertical">
+                        <TextBlock
+                            Foreground="White"
+                            Text="Dean Winchester">
+                        </TextBlock>
+                        <TextBlock
+                            Margin="0, 10, 0, 0"
+                            Foreground="White"
+                            Text="UX DESIGNER, GOOGLE INC.">
+                        </TextBlock>
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
+            <StackPanel
+                Margin="0, 0, 0, 35"
+                VerticalAlignment="Bottom"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Orientation="Horizontal"
+                HorizontalAlignment="Center">
+                <Ellipse
+                    Width="10"
+                    Height="10"
+                    Fill="White">
+                </Ellipse>
+                <Border
+                    Margin="5, 0, 0, 0"
+                    CornerRadius="100"
+                    BorderBrush="White"
+                    BorderThickness="1">
+                    <Ellipse
+                        Width="10"
+                        Height="10">
+                    </Ellipse>
+                </Border>
+                <Border
+                    Margin="5, 0, 0, 0"
+                    CornerRadius="100"
+                    BorderBrush="White"
+                    BorderThickness="1">
+                    <Ellipse
+                        Width="10"
+                        Height="10">
+                    </Ellipse>
+                </Border>
+            </StackPanel>
+
+			<!--Like what you see-->
+			<StackPanel
+                Background="#15141a"
+                Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="6">
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Left"
+                Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"
+                Margin="0, 60, 0, 0">
+                <TextBlock
+                    Width="300"
+                    FontSize="30"
+                    Foreground="White"
+                    FontStyle="Oblique"
+                    TextWrapping="Wrap">
+                    Like what you see? now!
+                </TextBlock>
+                <TextBlock
+                    FontSize="30"
+                    Foreground="White">
+                    Get this great theme
+                </TextBlock>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0, 10, 0, 0"
+                Grid.Row="5" Grid.Column="3"
+                HorizontalAlignment="Right">
+                <Border
+                    Width="150"
+                    Height="50"
+                    BorderBrush="White"
+                    BorderThickness="0.6"
+                    CornerRadius="10">
+                    <Button
+                        Width="150"
+                        Height="50"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        FontSize="17"
+                        Foreground="White">
+                        View Features
+                    </Button>
+                </Border>
+                <Button
+					Margin="15, 0, 0, 0"
+                    Width="150"
+                    Height="50"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontSize="17"
+                    Foreground="White"
+                    Content="Download Now"
+                    Background="DodgerBlue">
+
+                </Button>
+            </StackPanel>
+			<!--Pricinigs-->
+			<StackPanel
+                Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="6"
+                HorizontalAlignment="Center">
+                <TextBlock
+                    Margin="0, 50, 0, 0"
+                    TextAlignment="Center"
+                    Foreground="DodgerBlue"
+                    Text="QUALITY HAS ITS PRICE">
+                </TextBlock>
+                <TextBlock
+                    Margin="0, 10, 0, 0"
+                    TextAlignment="Center"
+                    Text="Pricings &amp; Plans"
+                    Foreground="Black"
+                    FontSize="33">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="6"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0, 130, 2, 0"
+                Orientation="Horizontal">
+                <Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+                </Border>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="6"
+                Grid.Column="3"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="2, 130, 2, 0"
+                Orientation="Horizontal">
+                <Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+                </Border>
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="2"
+                Grid.Row="6"
+                Orientation="Vertical"
+				Margin="0, 200, 259, 0"
+                HorizontalAlignment="Right">
+                <Border
+                    
+                    BorderBrush="#e0e0e0"
+                    BorderThickness="1"
+                    Width="219"
+                    Height="400">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0, 20, 0, 0"
+                            FontSize="25"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Center"
+                            Text="FREE"
+                            Foreground="Black">
+                        </TextBlock>
+                        <Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+                        </Separator>
+						<StackPanel
+							HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Margin="0, 20, 0, 0 "
+                            FontSize="20">
+                            $
+                        </TextBlock>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Margin="0, 0, 0, 0"
+                            FontSize="55">
+                            0
+                        </TextBlock>
+						</StackPanel>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Foreground="Gray">
+                            /per month
+                        </TextBlock>
+                        <Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+                        </Separator>
+                        <TextBlock
+                            Margin="0, 20, 0, 30"
+                            Width="180"
+							FontSize="16" 
+							Foreground="Gray"
+                            TextAlignment="Center"
+                            TextWrapping="Wrap">
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                            lacinia consectetur.
+                        </TextBlock>
+                        <Border
+                            Width="150"
+                            Height="50"
+                            BorderBrush="#e0e0e0"
+                            BorderThickness="1">
+                            <Button
+                                HorizontalAlignment="Center"
+                                Width="150"
+                                Height="50"
+                                Background="White"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Foreground="DodgerBlue"
+                                Content="ORDER NOW">
+
+                            </Button>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="2"
+                Grid.Row="6"
+                Margin="10, 200, 10, 0"
+                Orientation="Vertical"
+                HorizontalAlignment="Right">
+                <Border
+                    BorderBrush="#e0e0e0"
+                    BorderThickness="0.6"
+                    Width="219"
+                    Height="400">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0, 20, 0, 0"
+                            FontSize="25"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Text="PERSONAL"
+                            Foreground="Black">
+                        </TextBlock>
+                        <Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+                        </Separator>
+
+						<StackPanel
+							 HorizontalAlignment="Center"
+							 Orientation="Horizontal">
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 20, 0, 0 "
+								FontSize="20">
+								$
+							</TextBlock>
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 0, 0, 0"
+								FontSize="55">
+								25
+							</TextBlock>
+						</StackPanel>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            Foreground="Gray">
+                            /per month
+                        </TextBlock>
+                        <Separator
+                            Margin="0, 20, 0, 0"
+                            Width="216"
+                            Background="#e0e0e0">
+                        </Separator>
+                        <TextBlock
+                            Margin="0, 20, 0, 30"
+                            Width="180"
+							FontSize="16"
+							Foreground="Gray"
+                            TextAlignment="Center"
+                            TextWrapping="Wrap">
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+                            lacinia consectetur.
+                        </TextBlock>
+                        <Border
+                            Width="150"
+                            Height="50"
+                            BorderBrush="#e0e0e0"
+                            BorderThickness="1">
+                            <Button
+                                HorizontalAlignment="Center"
+                                Width="150"
+                                Height="50"
+                                Background="White"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Foreground="DodgerBlue"
+                                Content="ORDER NOW">
+                            </Button>
+                        </Border>
+                    </StackPanel>
+
+                </Border>
+            </StackPanel>
+			<StackPanel
+				 Grid.Column="3"
+				 Grid.Row="6"
+				 Orientation="Vertical"
+				 HorizontalAlignment="Left"
+				 Margin="10, 200, 10, 40">
+				<Border
+                    
+                    BorderBrush="#e0e0e0"
+                    BorderThickness="1"
+                    Width="219"
+                    Height="400">
+					<StackPanel>
+						<TextBlock
+                            Margin="0, 20, 0, 0"
+                            FontSize="25"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Center"
+                            Text="BUSINESS"
+                            Foreground="Black">
+						</TextBlock>
+						<Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+						</Separator>
+						<StackPanel
+							HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 20, 0, 0 "
+								FontSize="20">
+								$
+							</TextBlock>
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 0, 0, 0"
+								FontSize="55">
+								50
+							</TextBlock>
+						</StackPanel>
+						<TextBlock
+                            HorizontalAlignment="Center"
+                            Foreground="Gray">
+							/per month
+						</TextBlock>
+						<Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+						</Separator>
+						<TextBlock
+                            Margin="0, 20, 0, 30"
+                            Width="180"
+							FontSize="16"
+							Foreground="Gray"
+                            TextAlignment="Center"
+                            TextWrapping="Wrap">
+							Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+							lacinia consectetur.
+						</TextBlock>
+						<Border
+                            Width="150"
+                            Height="50"
+                            BorderBrush="#e0e0e0"
+                            BorderThickness="1">
+							<Button
+                                HorizontalAlignment="Center"
+                                Width="150"
+                                Height="50"
+                                Background="White"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Foreground="DodgerBlue"
+                                Content="ORDER NOW">
+
+							</Button>
+						</Border>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+			<StackPanel
+                Grid.Column="3"
+                Grid.Row="6"
+                Margin="259, 200, 0, 40"
+                Orientation="Vertical"
+                HorizontalAlignment="Left">
+				<Border
+                    BorderBrush="#e0e0e0"
+                    BorderThickness="0.6"
+                    Width="219"
+                    Height="400">
+					<StackPanel>
+						<TextBlock
+                            Margin="0, 20, 0, 0"
+                            FontSize="25"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Text="ULTIMATE"
+                            Foreground="Black">
+						</TextBlock>
+						<Separator Margin="0, 20, 0, 0"
+                                   Width="219"
+                                   Background="#e0e0e0">
+						</Separator>
+
+						<StackPanel
+							 HorizontalAlignment="Center"
+							 Orientation="Horizontal">
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 20, 0, 0 "
+								FontSize="20">
+								$
+							</TextBlock>
+							<TextBlock
+								HorizontalAlignment="Center"
+								Margin="0, 0, 0, 0"
+								FontSize="55">
+								25
+							</TextBlock>
+						</StackPanel>
+						<TextBlock
+                            HorizontalAlignment="Center"
+                            Foreground="Gray">
+							/per month
+						</TextBlock>
+						<Separator
+                            Margin="0, 20, 0, 0"
+                            Width="219"
+                            Background="#e0e0e0">
+						</Separator>
+						<TextBlock
+                            Margin="0, 20, 0, 30"
+                            Width="180"
+							FontSize="16"
+							Foreground="Gray"
+                            TextAlignment="Center"
+                            TextWrapping="Wrap">
+							Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum
+							lacinia consectetur.
+						</TextBlock>
+						<Border
+                            Width="150"
+                            Height="50"
+                            BorderBrush="#e0e0e0"
+                            BorderThickness="1">
+							<Button
+                                HorizontalAlignment="Center"
+                                Width="150"
+                                Height="50"
+                                Background="White"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Foreground="DodgerBlue"
+                                Content="ORDER NOW">
+							</Button>
+						</Border>
+					</StackPanel>
+
+				</Border>
+			</StackPanel>
+			<StackPanel
+				Background="Gainsboro"
+				Grid.Row="7"
+				Grid.Column="0"
+				Grid.ColumnSpan="6">
+				
+			</StackPanel>
+			<StackPanel
+				Margin="0, 40, 0, 0"
+				HorizontalAlignment="Center"
+				 Grid.Column="2"
+				 Grid.ColumnSpan="2"
+				 Grid.Row="7">
+				<TextBlock
+					HorizontalAlignment="Center"
+					Foreground="DodgerBlue">
+					STAY IN TOUCH
+				</TextBlock>
+				<TextBlock
+					FontSize="33">
+					Contact us
+				</TextBlock>
+				
+			</StackPanel>
+			<StackPanel
+                Grid.Row="7"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0, 130, 2, 0"
+                Orientation="Horizontal">
+				<Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+				</Border>
+			</StackPanel>
+			<StackPanel
+                Grid.Row="7"
+                Grid.Column="3"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="2, 130, 2, 0"
+                Orientation="Horizontal">
+				<Border
+                    HorizontalAlignment="Right"
+                    Width="20"
+                    Height="2"
+                    Background="DodgerBlue">
+				</Border>
+			</StackPanel>
+			
+			<StackPanel
+				Width="180"
+				Orientation="Vertical"
+				Grid.Column="2"
+				Margin="0, 180, 0, 20"
+				Grid.Row="7"
+				HorizontalAlignment="Left">
+				<Image
+					HorizontalAlignment="Center" 
+					Source="/Assets/icon4.png"
+					   Width="40"
+					   Height="40">
+				</Image>
+				<TextBlock
+					HorizontalAlignment="Center"
+					TextAlignment="Center"
+					Margin="0, 10, 0, 0"
+					FontSize="16"
+					TextWrapping="Wrap">
+					Phone: (415) 124-5678
+				</TextBlock>
+				<TextBlock
+					HorizontalAlignment="Center"
+					TextAlignment="Center"
+					FontSize="16"
+					TextWrapping="Wrap"
+					Margin="0, 10, 0, 0">
+					Fax: (412) 123-8290
+				</TextBlock>
+			</StackPanel>
+			<StackPanel
+				Orientation="Vertical"
+				Grid.Column="2"
+				Width="150"
+				Grid.ColumnSpan="2"
+				Margin="0, 180, 0, 20"
+				Grid.Row="7"
+				HorizontalAlignment="Center">
+				<Image
+					HorizontalAlignment="Center"
+					Source="/Assets/location.png"
+					   Width="40"
+					   Height="40">
+				</Image>
+				<TextBlock
+					Margin="0, 10, 0, 0"
+					TextAlignment="Center"
+					FontSize="16"
+					TextWrapping="Wrap">
+					1001 Brickell Bay Dr.
+				</TextBlock>
+				<TextBlock
+					Margin="0, 10, 0, 0"
+					TextAlignment="Center"
+					FontSize="16"
+					TextWrapping="Wrap">
+					Suite 1900
+				</TextBlock>
+				<TextBlock
+					Margin="0, 10, 0, 0"
+					TextAlignment="Center"
+					FontSize="16"
+					TextWrapping="Wrap">
+					Miami, FL 33131
+				</TextBlock>
+			</StackPanel>
+			<StackPanel
+				Width="150"
+				Orientation="Vertical"
+				Grid.Column="3"
+				Margin="0, 180, 0, 20"
+				Grid.Row="7"
+				HorizontalAlignment="Right">
+				<Image
+					HorizontalAlignment="Center"
+					Source="/Assets/icon2.png"
+					   Width="40"
+					   Height="40">
+				</Image>
+				<TextBlock
+					TextAlignment="Center"
+					HorizontalAlignment="Center"
+					Margin="0, 10, 0, 0"
+					FontSize="16"
+					TextWrapping="Wrap">
+					user@mail.com
+				</TextBlock>
+			</StackPanel>
+			
+			<StackPanel
+			    Grid.Row="8"
+				Grid.Column="0"
+				Grid.ColumnSpan="6">
+				<StackPanel.Background>
+                    <ImageBrush Source="Assets/map.jpg" Stretch="UniformToFill"></ImageBrush>
+                </StackPanel.Background>
+			</StackPanel>
+			<StackPanel
+				Margin="0,200, 0, 0"
+				Grid.Row="7"
+				Grid.RowSpan="2"
+				Grid.Column="2"
+				Grid.ColumnSpan="2"
+				Width="800"
+				Height="380"
+			    Background="#15141a"
+				Orientation="Horizontal">
+				<StackPanel
+				Orientation="Vertical"
+				Grid.Column="2"
+				Grid.Row="7"
+				Grid.RowSpan="2">
+					<Border
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="50"
+						Background="#15141a"
+						BorderThickness="0.6"
+						BorderBrush="Gray"
+						Margin="80, 70, 20, 0">
+						<TextBox
+							Watermark="NAME*"
+						HorizontalAlignment="Left"
+						Width="330"
+						Height="50"
+						Background="#15141a"
+						Foreground="Gray"
+					>
+						</TextBox>
+
+					</Border>
+					<Border
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="50"
+						Background="#15141a"
+						BorderThickness="0.6"
+						BorderBrush="Gray"
+						Margin="80, 20, 0, 0">
+						<TextBox
+							Watermark="EMAIL*"
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="50"
+						Background="#15141a"
+						Foreground="Gray">
+						</TextBox>
+
+					</Border>
+					<Border
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="50"
+						Background="#15141a"
+						BorderThickness="0.6"
+						BorderBrush="Gray"
+						Margin="80, 20, 0, 0">
+						<TextBox
+							Watermark="SUBJECT*"
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="50"
+						Background="#15141a"
+						Foreground="Gray">
+						</TextBox>
+
+					</Border>
+				</StackPanel>
+				<StackPanel
+					Grid.Column="3"
+					Grid.Row="7"
+					Grid.RowSpan="2">
+					<Border
+						Grid.Column="3"
+						HorizontalAlignment="Right"
+						VerticalAlignment="Top"
+						Width="300"
+						Height="190"
+						Background="Black"
+						BorderThickness="0.6"
+						BorderBrush="Gray"
+						Margin="20, 70, 80, 0">
+						<TextBox
+							Watermark="MESSAGE"
+						HorizontalAlignment="Left"
+						Width="300"
+						Height="190"
+						Background="#15141a"
+						Foreground="Gray">
+						</TextBox>
+
+					</Border>
+					<Button
+						Margin="0, 20, 80, 40"
+						VerticalAlignment="Bottom"
+						HorizontalAlignment="Right"
+						HorizontalContentAlignment="Center"
+						VerticalContentAlignment="Center"
+						Height="50"
+						Width="150"
+						Foreground="White"
+						Background="DodgerBlue"
+						Content="SEND MESSAGE">
+					</Button>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel
+				Background="#15141a"
+				Grid.Column="0"
+				Grid.ColumnSpan="6"
+				Grid.Row="9">
+			</StackPanel>
+			<StackPanel
+				Grid.Column="2"
+				Grid.ColumnSpan="2"
+				Grid.Row="9"
+				Orientation="Horizontal"
+				HorizontalAlignment="Center">
+				<Border
+					Background="#15141a"
+					HorizontalAlignment="Center"
+					Width="80"
+					Height="80"
+					CornerRadius="100"
+					ClipToBounds="True">
+					<Button
+						UseLayoutRounding="True"
+						Background="#15141a"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="100"
+							ClipToBounds="True">
+						<Image
+							Width="80"
+                            Height="80"
+							UseLayoutRounding="True"
+							Source="/Assets/iconBottom5.png">
+						</Image>
+						</Border>
+				    </Button>
+				</Border>
+				<Border
+					Background="#15141a"
+					HorizontalAlignment="Center"
+					Width="80"
+					Height="80"
+					CornerRadius="100"
+					ClipToBounds="True">
+					<Button
+						UseLayoutRounding="True"
+						Background="#15141a"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="100"
+							ClipToBounds="True">
+						<Image 
+							Width="80"
+                            Height="80"
+							UseLayoutRounding="True"
+							Source="/Assets/iconBottom3.png">
+						</Image>
+						</Border>
+					</Button>
+				</Border>
+				<Border
+					Background="#15141a"
+					HorizontalAlignment="Center"
+					Width="80"
+					Height="80"
+					CornerRadius="100"
+					ClipToBounds="True">
+					<Button
+						UseLayoutRounding="True"
+						Background="#15141a"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="100"
+							ClipToBounds="True">
+							<Image
+								Width="80"
+								Height="80"
+								UseLayoutRounding="True"
+								Source="/Assets/iconBottom3.png">
+							</Image>
+						</Border>
+					</Button>
+				</Border>
+				<Border
+					Background="#15141a"
+					HorizontalAlignment="Center"
+					Width="80"
+					Height="80"
+					CornerRadius="100"
+					ClipToBounds="True">
+					<Button
+						UseLayoutRounding="True"
+						Background="#15141a"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="100"
+							ClipToBounds="True">
+							<Image
+								Width="80"
+								Height="80"
+								UseLayoutRounding="True"
+								Source="/Assets/iconBottom3.png">
+							</Image>
+						</Border>
+					</Button>
+				</Border>
+				<Border
+					Background="#15141a"
+					HorizontalAlignment="Center"
+					Width="80"
+					Height="80"
+					CornerRadius="100"
+					ClipToBounds="True">
+					<Button
+						UseLayoutRounding="True"
+						Background="#15141a"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="100"
+							ClipToBounds="True">
+							<Image
+								Width="80"
+								Height="80"
+								UseLayoutRounding="True"
+								Source="/Assets/iconBottom3.png">
+							</Image>
+						</Border>
+					</Button>
+				</Border>
+			</StackPanel>
+			<StackPanel
+				Grid.Column="2"
+				Grid.ColumnSpan="2"
+				Grid.Row="9"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Bottom">
+				<TextBlock
+					Margin="0, 0, 0, 20"
+					HorizontalAlignment="Center"
+					FontSize="16"
+					Foreground="Gray">
+					COPYRIGHT © 2015 MOSTAFIZUR RAHMAN
+				</TextBlock>
+			</StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

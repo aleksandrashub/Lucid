@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.0.2" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.2" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.2" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.2" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.2" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <None Remove="Assets\banner.jpg" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <AvaloniaResource Include="..\..\LicidFiles\img\banner.jpg">
+        <Link>Assets\banner.jpg</Link>
+      </AvaloniaResource>
+      <None Remove="Assets\paralax.jpg" />
+      <AvaloniaResource Include="Assets\paralax.jpg" />
+      <None Remove="Assets\verticle-phone.png" />
+      <AvaloniaResource Include="Assets\verticle-phone.png" />
+      <None Remove="Assets\laid-phone2.png" />
+      <AvaloniaResource Include="Assets\laid-phone2.png" />
+      <None Remove="Assets\second.jpg" />
+      <AvaloniaResource Include="Assets\second.jpg" />
+      <None Remove="Assets\_11.png" />
+      <None Remove="Assets\_1111.png" />
+      <None Remove="Assets\1111.png" />
+      <AvaloniaResource Include="Assets\1111.png" />
+      <None Remove="Assets\222.png" />
+      <AvaloniaResource Include="Assets\222.png" />
+      <None Remove="Assets\33.jpg" />
+      <None Remove="Assets\333.png" />
+      <AvaloniaResource Include="Assets\333.png" />
+      <None Remove="Assets\4.jpg" />
+      <AvaloniaResource Include="Assets\4.jpg" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <AvaloniaResource Include="C:\Users\prdb\Downloads\PERSON1.jpg">
+        <Link>Assets\PERSON1.jpg</Link>
+      </AvaloniaResource>
+    </ItemGroup>
+</Project>
